@@ -1,9 +1,12 @@
-let num = prompt();
+const login = prompt()
+let message;
 
-if (num > 0) {
-    alert( 1 );
-} else if (num < 0) {
-    alert( -1 );
+if (login == 'Сотрудник') {
+    message = 'Привет';
+} else if (login == 'Директор') {
+    message = 'Здравствуйте';
+} else if (login == '') {
+    message = 'Нет логина';
 } else {
-    alert( 0 );
+    message = '';
 }
