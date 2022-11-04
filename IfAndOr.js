@@ -1,12 +1,7 @@
 const login = prompt()
-let message;
 
-if (login == 'Сотрудник') {
-    message = 'Привет';
-} else if (login == 'Директор') {
-    message = 'Здравствуйте';
-} else if (login == '') {
-    message = 'Нет логина';
-} else {
-    message = '';
-}
+let message = (login == '1') ? 'Привет' :
+    (login == '2') ? 'Здравствуйте' :
+        (login == '') ? 'Нет логина' :
+            '';
+alert(message)
