@@ -1,10 +1,16 @@
-//без этого оператора.
+const login = prompt("Кто там?")
+if (login === 'Админ') {
+    let pass = prompt('Пароль?')
+    if (pass === 'Я главный') {
+        alert( 'Здравствуйте!' );
+    } else if (pass === '' || pass === null) {
+        alert( 'Отменено' );
+    } else {
+        alert( 'Неверный пароль' );
+    }
 
-const age = prompt()
-if (age < 14 || age > 90) {
-    alert('Верно')
+} else if (userName === '' || userName === null) {
+    alert( 'Отменено' );
+} else {
+    alert( "Я вас не знаю" );
 }
-else {
-    alert('Не верно')
-}
-
