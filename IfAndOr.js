@@ -2,6 +2,10 @@ function calculate(year){
     return 2020 - year
 }
 
-console.log(calculate(2000))
-console.log(calculate(1957))
-console.log(calculate(1812))
+function logInfoAbout(name, year){
+    const age = calculate(year)
+
+    console.log('Человек по имени' + name + 'сейчас имеет возраст' + age)
+}
+
+logInfoAbout('Саня', 1910)
