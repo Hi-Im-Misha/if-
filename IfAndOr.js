@@ -4,7 +4,7 @@ function calculate(year){
 
 function logInfoAbout(name, year){
     const age = calculate(year)
-    if (age >= 220) {
+    if (age >= 20) {
         console.log('Человек по имени' + name + 'сейчас имеет возраст' + age)
     } else {
         console.log('Нет')
