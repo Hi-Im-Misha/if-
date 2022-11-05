@@ -1,16 +1,7 @@
-const login = prompt("Кто там?")
-if (login === 'Админ') {
-    let pass = prompt('Пароль?')
-    if (pass === 'Я главный') {
-        alert( 'Здравствуйте!' );
-    } else if (pass === '' || pass === null) {
-        alert( 'Отменено' );
-    } else {
-        alert( 'Неверный пароль' );
-    }
-
-} else if (userName === '' || userName === null) {
-    alert( 'Отменено' );
-} else {
-    alert( "Я вас не знаю" );
+function calculate(year){
+    return 2020 - year
 }
+
+console.log(calculate(2000))
+console.log(calculate(1957))
+console.log(calculate(1812))
