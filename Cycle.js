@@ -1,8 +1,8 @@
-for (;num < 100 && num;) {
-    const num = prompt("ведите число, больше", "100");
-    if (isNaN(num)) {
-        alert("Нужно написать число");
-    } else if (num >= 100 && num){
-        break;
+let n = 10;
+nextPrime:
+    for (let i = 2; i <= n; i++) {
+        for (let j = 2; j < i; j++) {
+            if (i % j == 0) continue nextPrime;
+        }
+        alert( i );
     }
-}
